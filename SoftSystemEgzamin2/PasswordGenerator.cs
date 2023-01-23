@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SoftSystemEgzamin2
+﻿namespace SoftSystemEgzamin2
 {
     internal class PasswordGenerator
     {
@@ -26,7 +20,6 @@ namespace SoftSystemEgzamin2
                 _rules.Add(rule);
                 lenght += rule.GetNuberOfUsage();
             }
-
 
             _passwordLength = _rnd.Next(lenght, lenght + 10);
             _tempPasswordArray = new string[_passwordLength];
